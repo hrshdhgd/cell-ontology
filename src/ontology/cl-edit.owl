@@ -40,6 +40,7 @@ Declaration(Class(obo:CL_0000006))
 Declaration(Class(obo:CL_0000007))
 Declaration(Class(obo:CL_0000008))
 Declaration(Class(obo:CL_0000009))
+Declaration(Class(obo:CL_00000099999999))
 Declaration(Class(obo:CL_0000010))
 Declaration(Class(obo:CL_0000011))
 Declaration(Class(obo:CL_0000012))
@@ -3370,34 +3371,22 @@ AnnotationAssertion(rdfs:label obo:CL_0000000 "cell")
 SubClassOf(obo:CL_0000000 obo:UBERON_0000061)
 SubClassOf(obo:CL_0000000 ObjectSomeValuesFrom(obo:RO_0002160 obo:NCBITaxon_131567))
 
-# Class: obo:CL_0000001 (primary cultured cell)
+# Class: obo:CL_0000001 (obsolete primary cultured cell)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "ReO:mhb") obo:IAO_0000115 obo:CL_0000001 "A cultured cell that is freshly isolated from a organismal source, or derives in culture from such a cell prior to the culture being passaged.")
-AnnotationAssertion(oboInOwl:hasDbXref obo:CL_0000001 "BTO:0002290")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:CL_0000001 "primary cell culture cell")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:CL_0000001 "unpassaged cultured cell")
-AnnotationAssertion(oboInOwl:hasRelatedSynonym obo:CL_0000001 "primary cell line cell")
-AnnotationAssertion(rdfs:comment obo:CL_0000001 "Covers cells actively being cultured or stored in a quiescent state for future use.")
-AnnotationAssertion(rdfs:label obo:CL_0000001 "primary cultured cell")
-SubClassOf(obo:CL_0000001 obo:CL_0000010)
+AnnotationAssertion(rdfs:label obo:CL_0000001 "obsolete primary cultured cell")
+AnnotationAssertion(owl:deprecated obo:CL_0000001 "true"^^xsd:boolean)
 
-# Class: obo:CL_0000002 (obsolete immortal cell line cell)
+# Class: obo:CL_0000002 (obsolete obsolete immortal cell line cell)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "ReO:mhb") obo:IAO_0000115 obo:CL_0000002 "OBSOLETE: A cell line cell that is expected to be capable of an unlimited number of divisions, and is thus able to support indefinite growth/propagation in vitro as part of a immortal cell line.")
-AnnotationAssertion(obo:IAO_0100001 obo:CL_0000002 obo:CLO_0000019)
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:CL_0000002 "continuous cell line cell")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:CL_0000002 "permanent cell line cell")
-AnnotationAssertion(rdfs:comment obo:CL_0000002 "Obsoleted in July 2013 and replaced by the CLO 'immortal cell line cell' class, as a result of CLO-OBI-CL alignment efforts.
-
-Covers cells actively being cultured or stored in a quiescent state for future use.")
-AnnotationAssertion(rdfs:label obo:CL_0000002 "obsolete immortal cell line cell")
+AnnotationAssertion(obo:IAO_0100001 obo:CL_0000002 obo:CL_000000X)
+AnnotationAssertion(rdfs:label obo:CL_0000002 "obsolete obsolete immortal cell line cell")
 AnnotationAssertion(owl:deprecated obo:CL_0000002 "true"^^xsd:boolean)
 
 # Class: obo:CL_0000003 (native cell)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "CARO:mah") obo:IAO_0000115 obo:CL_0000003 "A cell that is found in a natural setting, which includes multicellular organism cells 'in vivo' (i.e. part of an organism), and unicellular organisms 'in environment' (i.e. part of a natural environment).")
 AnnotationAssertion(oboInOwl:hasDbXref obo:CL_0000003 "CARO:0000013")
-AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:CL_0000003 "cell in vivo")
+AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:CL_0000003 "cell in vivo ABCD")
 AnnotationAssertion(oboInOwl:inSubset obo:CL_0000003 <http://purl.obolibrary.org/obo/ubprop#_upper_level>)
 AnnotationAssertion(rdfs:comment obo:CL_0000003 "To accommodate unicellular organisms better, 'cell in vivo' has been re-labeled 'native cell' to better represent its intended meaning - that is, that it is a cell in the context of a multicellular organism or in a natural environment. 'Native' is intended to contrast with 'in vitro', which refers to cells or other biological entities that have been intentionally placed in a controlled, non-natural setting for the purpose of study or manipulation. (MAH 1.12.12).")
 AnnotationAssertion(rdfs:label obo:CL_0000003 "native cell")
@@ -3423,7 +3412,6 @@ SubClassOf(obo:CL_0000005 ObjectSomeValuesFrom(obo:RO_0002202 obo:CL_0000008))
 
 # Class: obo:CL_0000006 (neuronal receptor cell)
 
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:CL_0000006 "neuronal receptor cell (sensu Animalia)")
 AnnotationAssertion(rdfs:label obo:CL_0000006 "neuronal receptor cell")
 EquivalentClasses(obo:CL_0000006 ObjectIntersectionOf(obo:CL_0000197 obo:CL_0000540 ObjectSomeValuesFrom(obo:RO_0002215 obo:GO_0050906)))
 SubClassOf(obo:CL_0000006 obo:CL_0000197)
@@ -3449,12 +3437,23 @@ AnnotationAssertion(oboInOwl:hasRelatedSynonym obo:CL_0000009 "xylem mother cell
 AnnotationAssertion(rdfs:label obo:CL_0000009 "obsolete fusiform initial")
 AnnotationAssertion(owl:deprecated obo:CL_0000009 "true"^^xsd:boolean)
 
-# Class: obo:CL_0000010 (cultured cell)
+# Class: obo:CL_00000099999999 (ABCD)
+
+AnnotationAssertion(obo:IAO_0000115 obo:CL_00000099999999 "new definition ABCD")
+AnnotationAssertion(oboInOwl:hasBroadSynonym obo:CL_00000099999999 "ABCD3")
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:CL_00000099999999 "ABCD1")
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:CL_00000099999999 "ABCD2")
+AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:CL_00000099999999 "ABCD4")
+AnnotationAssertion(oboInOwl:hasRelatedSynonym obo:CL_00000099999999 "ABCD5")
+AnnotationAssertion(rdfs:label obo:CL_00000099999999 "ABCD")
+SubClassOf(obo:CL_00000099999999 obo:CL_0000001)
+
+# Class: obo:CL_0000010 (cultured cell ABCD)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "ReO:mhb") obo:IAO_0000115 obo:CL_0000010 "A cell in vitro that is or has been maintained or propagated as part of a cell culture.")
 AnnotationAssertion(oboInOwl:hasDbXref obo:CL_0000010 "MESH:D002478")
 AnnotationAssertion(rdfs:comment obo:CL_0000010 "Note that this class was re-labeled to 'cultured cell' instead of 'cell line cell', as it intent was clarified to cover any cultured cells of multicellular and unicellular organisms. This includes cells actively being cultured, or cells that have been cultured but are stored in a quiescent state for future use. In having been cultured, cells must establish homeostasis and often replicate in a foreign environment. Accomodation of this stress initiates a selection of cells fit for such challenges, wherein necessary adaptive biochemical and.or genetic changes can occur. These changes can set them apart from the in vivo cells from which they derive, and such changes will typically accumulate and change over increasing time in culture.")
-AnnotationAssertion(rdfs:label obo:CL_0000010 "cultured cell")
+AnnotationAssertion(rdfs:label obo:CL_0000010 "cultured cell ABCD")
 SubClassOf(obo:CL_0000010 obo:CL_0000578)
 
 # Class: obo:CL_0000011 (migratory trunk neural crest cell)
