@@ -3394,16 +3394,11 @@ AnnotationAssertion(rdfs:comment obo:CL_0000001 "Covers cells actively being cul
 AnnotationAssertion(rdfs:label obo:CL_0000001 "primary cultured cell")
 SubClassOf(obo:CL_0000001 obo:CL_0000010)
 
-# Class: obo:CL_0000002 (obsolete immortal cell line cell)
+# Class: obo:CL_0000002 (obsolete obsolete immortal cell line cell)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "ReO:mhb") obo:IAO_0000115 obo:CL_0000002 "OBSOLETE: A cell line cell that is expected to be capable of an unlimited number of divisions, and is thus able to support indefinite growth/propagation in vitro as part of a immortal cell line.")
-AnnotationAssertion(obo:IAO_0100001 obo:CL_0000002 obo:CLO_0000019)
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:CL_0000002 "continuous cell line cell")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:CL_0000002 "permanent cell line cell")
-AnnotationAssertion(rdfs:comment obo:CL_0000002 "Obsoleted in July 2013 and replaced by the CLO 'immortal cell line cell' class, as a result of CLO-OBI-CL alignment efforts.
-
-Covers cells actively being cultured or stored in a quiescent state for future use.")
-AnnotationAssertion(rdfs:label obo:CL_0000002 "obsolete immortal cell line cell")
+AnnotationAssertion(oboInOwl:consider obo:CL_0000002 obo:CL_000000X)
+AnnotationAssertion(oboInOwl:consider obo:CL_0000002 obo:CL_000000Y)
+AnnotationAssertion(rdfs:label obo:CL_0000002 "obsolete obsolete immortal cell line cell")
 AnnotationAssertion(owl:deprecated obo:CL_0000002 "true"^^xsd:boolean)
 
 # Class: obo:CL_0000003 (obsolete native cell)
